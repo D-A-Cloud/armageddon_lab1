@@ -1,9 +1,18 @@
+
 # app.py
 
 from don.age_calculator import run_age_calculator
 from uriah.greeting import greet_user
 from noxiusm.favorite_color import ask_color
 from jassan.lucky_number import ask_lucky
+
+# app.py (repo root)
+
+from don.age_calculator import run_age_calculator
+from uriah.greeting import greet_user
+from jassan.lucky_number import ask_lucky
+from noxiusm.favorite_color import ask_color
+
 
 
 def main():
@@ -15,7 +24,11 @@ def main():
     print("5. Exit")
     print("============================")
 
+
     choice = input("Select option (1-5): ")
+
+    choice = input("Select option (1-5): ").strip()
+
 
     if choice == "1":
         run_age_calculator()
